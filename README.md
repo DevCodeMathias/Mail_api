@@ -2,21 +2,7 @@
 
 ## Overview
 
-The `mail_API` project is an ASP.NET Core Web API designed to manage Brazilian postal code (CEP) information. The API provides endpoints to fetch details of a specific CEP and to insert new address data by CEP.
-
-## Project Structure
-
-- **Controllers**
-  - `CepController`: Handles the API requests related to CEP information.
-- **Services**
-  - `CepService`: Implements the business logic for fetching and saving CEP information.
-- **Interfaces**
-  - `ICepService`: Defines the contract for the CEP service.
-  - `ICepRepository`: Defines the contract for the CEP repository.
-- **Models**
-  - `CepInfo`: Represents the CEP data structure.
-- **DTOs**
-  - `CepRequest`: Represents the data transfer object for the CEP request.
+The `mail_API` project is an ASP.NET Core Web API designed to manage Brazilian postal code (CEP) information, using a external API. The API provides endpoints to fetch details of a specific CEP and to insert new address data by CEP.
 
 ## Endpoints
 
