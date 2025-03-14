@@ -5,9 +5,9 @@ using System.Net.Http;
 using mail_api.Domain.Interfaces;
 
 
-namespace mail_api.Service
+namespace mail_api.Application.Service
 {
-    public class ViaCepService: IViaCepService
+    public class ViaCepService : IViaCepService
     {
         private readonly HttpClient _httpClient;
         private readonly ILogger<ViaCepService> _logger;

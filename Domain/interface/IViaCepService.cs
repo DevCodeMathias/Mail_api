@@ -7,7 +7,6 @@ namespace mail_api.Domain.Interfaces
     {
         Task<CepInfo> FetchAddressByCep(cepRequest cep);
     }
-
 }
 
 

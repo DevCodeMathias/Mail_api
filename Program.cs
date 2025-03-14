@@ -1,6 +1,6 @@
 using mail_api.Data;
-using mail_api.Service;
 using mail_api.Domain.Interfaces;
+using mail_api.Application.Service;
 
 
 var builder = WebApplication.CreateBuilder(args);

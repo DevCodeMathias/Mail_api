@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using mail_api.Domain.Interfaces;
 using mail_api.Domain.Model;
 
-namespace mail_api.controller
+namespace mail_api.Application.controller
 {
 
     [ApiController]
@@ -23,7 +23,7 @@ namespace mail_api.controller
             try
             {
 
-             
+
                 if (!Request.Headers.ContainsKey("Cep"))
                 {
                     return BadRequest("CEP header is missing.");
@@ -53,21 +53,21 @@ namespace mail_api.controller
         {
             try
             {
-             
+
                 bool isCepInDatabase = await _cepService.PostAddressByCep(cepRequest);
 
                 if (!isCepInDatabase)
                 {
-                   
+
                     return Conflict("CEP already exists in the database.");
                 }
 
-                
+
                 return Ok("Data successfully saved");
             }
             catch (Exception ex)
             {
-           
+
                 return StatusCode(500, $"Internal error: {ex.Message}");
             }
         }
