@@ -45,11 +45,6 @@ namespace mail_api.Application.Service
                 _logger.LogError($"HttpRequestException occurred while fetching address for CEP {cepRequest.Cep}: {ex.Message}");
                 throw new Exception("Error obtaining address by CEP.", ex);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Unexpected error occurred while fetching address for CEP {cepRequest.Cep}: {ex.Message}");
-                throw new Exception("Unexpected error processing request.", ex);
-            }
         }
     }
 }

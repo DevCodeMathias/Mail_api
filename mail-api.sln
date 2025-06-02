@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mail-api", "mail-api.csproj", "{8375F62A-013D-46FF-843F-2B6C4ED00589}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailApiTest", "..\MailApiTest\MailApiTest.csproj", "{7D5390DC-17AE-4ED1-8855-2700AD34E4F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8375F62A-013D-46FF-843F-2B6C4ED00589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8375F62A-013D-46FF-843F-2B6C4ED00589}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8375F62A-013D-46FF-843F-2B6C4ED00589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5390DC-17AE-4ED1-8855-2700AD34E4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5390DC-17AE-4ED1-8855-2700AD34E4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5390DC-17AE-4ED1-8855-2700AD34E4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5390DC-17AE-4ED1-8855-2700AD34E4F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
